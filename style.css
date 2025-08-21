@@ -1,0 +1,108 @@
+ * {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #c2f6e4;      
+    color: #2E3A3F;     
+    display: grid; 
+    place-items: center; 
+}
+
+.main {
+    width: 100%;
+    max-width: 720px; 
+    background: #FFFFFF;      
+    border: 1px solid #E5F0EC;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(46,58,63,0.06);
+    padding: 1.2rem;
+}
+
+
+header h1 { 
+    text-align: center;
+    margin-bottom: 10px; 
+    font-size: 1.35rem; 
+    color: #3f6a53;
+}
+
+#toDoForm{ 
+    display: flex; 
+    gap: .6rem; 
+}
+
+#taskInput {
+    flex: 1 1 auto;
+    padding: .85rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #E5F0EC;
+    background: #FFFFFF;
+    color: #2E3A3F;
+    outline: none; 
+
+}
+
+#taskInput:focus {
+    border-color: #59C3A6;                      
+    box-shadow: 0 0 0 4px rgba(89,195,166,0.22);
+}
+
+.btn {
+    padding: .85rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #E5F0EC;
+    background: linear-gradient(180deg,#59C3A6,#42B395); 
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 0 10px 20px rgba(107, 173, 239, 0.25); 
+    background-color: white;
+    color: #021c4f;
+}
+
+ul#tasks { 
+    list-style: none;
+    margin: 1rem 0 0;  
+    padding: 0;
+}
+
+.item {
+    display: flex;             
+    align-items: center;       
+    justify-content: space-between; 
+    gap: 0.8rem;              
+    padding: 0.8rem 0.9rem;
+    border-radius: 12px;
+    border: 1px solid #E5F0EC;
+    background: #FFFFFF;
+    margin-bottom: 0.6rem;
+}
+
+.item input[type="checkbox"] { 
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+
+.item.completed .task-text {
+    color: gray;
+    text-decoration: line-through 3px; 
+}
+
+.delete {
+    border-radius: 10px; 
+    padding: .5rem .7rem;
+    border: 1px solid #1f2937;
+    background: #FBE9E9;
+    color: #7F2D2C;
+    cursor: pointer;
+}
+.delete:hover {
+    background: #E46C6A;        
+    color: #FFFFFF;
+}
